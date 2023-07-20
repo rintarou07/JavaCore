@@ -51,7 +51,8 @@ public class CanBoManager {
 				System.out.println("3. Nhan Vien");
 				int roleNumber = sc.nextInt();
 				System.out.print("Nhap Ten: ");
-				String name = sc.next();
+				sc.nextLine();
+				String name = sc.nextLine(); 
 				System.out.println("");
 				System.out.print("nhap Tuoi: ");
 				int age = sc.nextInt();
@@ -61,7 +62,7 @@ public class CanBoManager {
 				String gender = sc.nextLine();
 				System.out.println("");
 				System.out.print("Nhap Dia Chi: ");
-				String address = sc.next();
+				String address = sc.nextLine();
 				System.out.println("");
 				switch (roleNumber) {
 				case 1:
@@ -72,12 +73,12 @@ public class CanBoManager {
 					break;
 				case 2:
 					System.out.println("Nhap nganh: ");
-					String nganh = sc.next();
+					String nganh = sc.nextLine();
 					myCanBoList.addCanBo(new KiSu(name, age, gender, address, nganh));
 					break;
 				case 3:
 					System.out.println("Nhap cong viec: ");
-					String job = sc.next(); 
+					String job = sc.nextLine(); 
 					myCanBoList.addCanBo(new NhanVien(name, age, gender, address, job));
 					break;
 				}
